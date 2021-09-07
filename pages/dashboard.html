@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Treeconomy app</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link type="image/x-icon" rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="../css/Chart.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.css"
+    />
+    <link rel="stylesheet" href="../css/main-normal.css" />
+    <link rel="stylesheet" href="../css/toggle.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="preheader ">
+							<nav>
+								<ul>
+									<li><a href="#"><img src="../img/icons/home-run.svg" alt=""></a></li>
+									<li><a href="#">Who we are?</a></li>
+									<li><a href="#">How it works</a></li>
+									<li><a href="#">Business</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="#">Brokers</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+        </div>
+        
+        <div class="search-bar">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-2">
+                <a href="#"><img src="../img/icons/Logo-Blanco.svg" alt=""></a>
+            </div>
+            <div class="col-md-3 centering-all">
+              <input type="text" class="search" placeholder="Buscar...">
+            </div>
+            <div class="col-md-3 centering-all">
+              <a href="#" class="button-plant">Plant Trees Now!</a>
+            </div>
+            <div class="col-md-1 centering-all">
+               <a href="#"><img src="../img/icons/notificaciones.svg" alt=""></a>
+            </div>
+            <div class="col-md-2 centering-all">
+              <p class="name-user">Nombre del Usuario</p>
+            </div>
+            <div class="col-md-1 centering-all">
+               <a href="#"><img src="../img/icons/icon_down.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+			</div>
+		</header>
+
+    <section class="rendimientos">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6">
+            <h2>Rendimientos</h2>
+          </div>
+          <div class="col-md-6">
+            <div class="descargar-info">
+              <a href="#"><img src="../img/icons/download.svg" alt=""> Descargar Información</a>
+            </div>
+          </div>
+        </div>
+        <section class="rendimiento-graficas">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="box-grap">
+                <div class="row d-flex align-items-center">
+                  <div class="col-md-5">
+                    <div class="chart-container" style=" height:auto; width:300px;margin-left: -35px;">
+                      <canvas id="myChartPie"></canvas>
+                      </div>
+                  </div>
+                  <div class="col-md-7">
+                    <p class="descripcion">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                    <div class="valor-producto">
+                      <p class="titulo">Rendimiento de tu inversión (3 años)</p>
+                      <ul>
+                        <li><p>$368.00</p><span>Tu inversión mensual</span></li>
+                        <li class="naranja"><p>$3.560.00</p><span>Tus ganancias actuales</span></li>
+                      </ul>
+                      <p class="condiciones">* Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="box-grap-green">
+                <div class="row d-flex align-items-center">
+                  <div class="col-md-8">
+                    <div class="texto-principal">
+                      <p>Total: $3.560.00</p><span>Rendimientos mensuales 2020</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="anio">
+                      <a href="#">Año 2020 <img src="../img/icons/icon_down.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <canvas id="myChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section  class="detalles">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="toggle-wrapper">
+              <ul>
+                <li class="open">Árbol plantado</li>
+                <li>
+                  <div class="toggle normal">
+                    <input id="normal" type="checkbox"/>
+                    <label class="toggle-item" for="normal"></label>
+                  </div>
+                </li>
+                <li>Por proyecto</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <div class="crecimiento-arbol">
+              <div class="row">
+                <div class="col-md-12">
+                  <p>Crecimiento del volumen del árbol</p>
+                </div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <div class="col-md-5">
+                  <div class="nombre-arbol">
+                    <img src="../img/image/arbol.svg" alt="">
+                    <p>Nombre del árbol</p>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <canvas id="myChart2"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fin-foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>¿Quieres <a href="#">Vender</a>o <a href="#">Subastar</a> tu árbol?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/vendor/slick.js"></script>
+    <script type="text/javascript" src="../js/vendor/datepicker.min.js"></script>
+    <script type="text/javascript" src="../js/vendor/datepicker.es-ES.js"></script>
+    <script type="text/javascript" src="../js/vendor/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../js/vendor/bootstrap.bundle.min.js"
+    ></script>
+    <script type="text/javascript" src="js/vendor/prefixfree.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.0/rangeslider.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../js/vendor/jquery.formatCurrency-1.4.0.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../js/vendor/jquery.formatCurrency.all.js"
+    ></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/main-2.js"></script>
+    <script type="text/javascript" src="../js/vendor/Chart.js"></script>
+    <script type="text/javascript" src="../js/vendor/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="../js/vendor/charts.js"></script>
+
+</html>
